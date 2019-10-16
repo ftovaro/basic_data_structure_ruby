@@ -37,7 +37,7 @@ And then instance the **bst** class and add some nodes:
 
 This is a graphic representation of the tree:
 
-![bst](https://github.com/ftovaro/basic_data_structure_ruby/blob/master/imgs/BST/bst.png)
+![bst](https://github.com/ftovaro/basic_data_structure_ruby/blob/master/imgs/bst/bst.png)
 ###### This is image is from the course *[Easy to Advanced Data Structures](https://www.udemy.com/course/introduction-to-data-structures/)* from **Udemy**.
 
 ### BST methods:
