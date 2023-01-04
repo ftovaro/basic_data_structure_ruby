@@ -20,6 +20,30 @@ class SingleLinkedList
     @size += 1
   end
 
+  def insert(new_value, position)
+    node = head
+    i = 0
+    # We need to step in the previous node
+    # of the position we want to add the new node
+    while !node.nil? && i < (position - 1)
+      node = node.nextn
+      i+=1
+    end
+
+    new_node = Node.new(value: new_value, nextn: node.nextn)
+    node.nextn = new_node
+    @size += 1
+    return new_node
+  end
+
+  def search(value)
+    node = head
+    while !node.nil? && node.value != value
+      node = node.nextn
+    end
+    return node
+  end
+
   def contains(value)
     node = head
     while !node.nil? && node.value != value
